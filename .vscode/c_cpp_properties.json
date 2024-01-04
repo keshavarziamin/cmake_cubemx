@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "name": "ARM",
+            "compileCommands": "${config:cmakek.buildDirectory}/compile_commands.json",
+            "configurationProvider": "ms-vscode.cmake-tools",
+            "includePath": [
+                "${default}",
+                "${workspaceFolder}/STM32CubeMX/**"
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "defines": ["USE_HAL_DRIVER","STM32F746xx"]
+        }
+    ],
+    "version": 4
+}
