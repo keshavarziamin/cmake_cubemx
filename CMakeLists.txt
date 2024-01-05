@@ -1,6 +1,12 @@
 cmake_minimum_required(VERSION 3.20)
-set(MCU STM32F7xx)
+
 project(BlinkLED)
+
+
+set(MCU_FAMILY_LIST  STM32F7xx STM32F4xx STM32F1xx STM32F0xx)
+set(MCU_FAMILY STM32F0xx CACHE STRING "Default MCU Family is Core")
+set_property(CACHE MCU_FAMILY PROPERTY STRINGS ${MCU_FAMILY_LIST})
+
 
 include(arm-none-eabi-binutils)
 
@@ -29,7 +35,6 @@ target_include_directories(${EXECUTABLE} PRIVATE ${INCLUDE_DIR} ${USER_INCLUDE_D
 ##########################################################
  include(stm32f7xx)
 ##########################################################
-
 
 
 # Create hex file

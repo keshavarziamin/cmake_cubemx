@@ -3,10 +3,10 @@
 
 set(CORE_INC_DIR ${WORKSPACE}/Core/Inc)
 set(CORE_SRC_DIR ${WORKSPACE}/Core/Src)
-set(DRIVER_INC_DIR ${WORKSPACE}/Drivers/${MCU}_HAL_Driver/Inc)
-set(DRIVER_SRC_DIR ${WORKSPACE}/Drivers/${MCU}_HAL_Driver/Src)
+set(DRIVER_INC_DIR ${WORKSPACE}/Drivers/${MCU_FAMILY}_HAL_Driver/Inc)
+set(DRIVER_SRC_DIR ${WORKSPACE}/Drivers/${MCU_FAMILY}_HAL_Driver/Src)
 set(CMSIS_INC_DIR ${WORKSPACE}/Drivers/CMSIS/Include)
-set(CMSIS_DEVICE_INC_DIR ${WORKSPACE}/Drivers/CMSIS/Device/ST/${MCU}/Include)
+set(CMSIS_DEVICE_INC_DIR ${WORKSPACE}/Drivers/CMSIS/Device/ST/${MCU_FAMILY}/Include)
 ##############################################################
 
 
