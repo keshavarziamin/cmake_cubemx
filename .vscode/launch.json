@@ -5,8 +5,8 @@
             "name": "Debug Microcontroller - STLink-V2",
             "cwd": "${workspaceFolder}",        //Path from where commands are executed
             "type": "cortex-debug",             //Debug 
-            "executable": "${workspaceRoot}/build/STM32CubeMX/BlinkLED.elf",
-            "svdFile": "${workspaceRoot}/tools/svd/STMicro/STM32F7x6.svd",
+            "executable": "${workspaceRoot}/build/BlinkLED.elf",
+            "svdFile": "${workspaceRoot}/svd/STMicro/STM32F7x6.svd",
             "request": "launch",                //Use "attach" to connect to target w/o elf download
             "servertype": "stlink",             //Use stlink setup of cortex-M debug
             "device": "STM32H746NG",            //MCU used
