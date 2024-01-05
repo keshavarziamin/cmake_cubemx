@@ -1,7 +1,7 @@
 {
     "cmake.configureSettings": {
         "cwd": "${workspaceFolder}",        //Path from where commands are executed
-        "CMAKE_TOOLCHAIN_FILE": "${workspaceFolder}/tools/ARM-M/arm-none-eabi-gcc.cmake"
+        "CMAKE_TOOLCHAIN_FILE": "${workspaceFolder}/cmake/arm-none-eabi-gcc.cmake"
     },
     "files.associations": {
         "*.cmake": "c",

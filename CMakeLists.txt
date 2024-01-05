@@ -1,20 +1,15 @@
+cmake_minimum_required(VERSION 3.20)
+set(MCU STM32F7xx)
 project(BlinkLED)
 
-set(MCU STM32F7xx)
-cmake_minimum_required(VERSION 3.20)
 
-
-cmake_minimum_required(VERSION 3.20)
-project(Butterfly)
-
-set(CMAKE_C_STANDARD 99)
+set(CMAKE_C_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_C_STANDARD_REQUIRED ON)
 set(CMAKE_C_EXTENSIONS OFF)
 
 enable_language(ASM)
 
-set(CMAKE_C_STANDARD_REQUIRED ON)
-set(CMAKE_C_EXTENSIONS OFF)
 
 
 ##############################################################
