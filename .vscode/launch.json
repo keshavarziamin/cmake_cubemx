@@ -34,11 +34,11 @@
             "request": "launch",
             "servertype": "openocd",
             "gdbPath" : "arm-none-eabi-gdb",
-           // "preLaunchTask": "Flash",
+            "preLaunchTask": "Flash",
             "device": "stlink",
             "configFiles": [
-                "${workspaceRoot}/debug-tools/openocd/tcl/interface/stlink.cfg",
-                "${workspaceRoot}/debug-tools/openocd/tcl/target/stm32f7x.cfg",
+                "interface\\stlink.cfg",
+                "target\\stm32f7x.cfg",
             ],
             "runToEntryPoint": "main",
             // Work around for stopping at main on restart
