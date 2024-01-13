@@ -1,0 +1,12 @@
+{
+    "cmake.buildDirectory": "${workspaceFolder}/build",
+    "cmake.configureSettings": {
+        "cwd": "${workspaceFolder}",        //Path from where commands are executed
+        "CMAKE_TOOLCHAIN_FILE": "${workspaceFolder}/cmake/arm-none-eabi-gcc.cmake",
+        "MCU_FAMILY":"STM32F7xx",
+    },
+    "files.associations": {
+        "*.cmake": "c",
+        "main.h": "c"
+    }
+}
