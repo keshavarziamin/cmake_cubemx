@@ -4,7 +4,6 @@
         {
             "type": "cppbuild",
             "label": "Build",
-            "key":"ctrl+b",
             "command": "cmake",
             "args": ["--build", "${command:cmake.buildDirectory}", "-j", "4"],
             "options": {
@@ -39,6 +38,7 @@
         {
             "type": "shell",
             "label": "Flash",
+           
             "command": "STM32_Programmer_CLI",
             "args": [
                 "--connect",
@@ -50,6 +50,7 @@
                 "cwd": "${workspaceFolder}"
             },
             "problemMatcher": []
+            
         },
         {
             "type": "shell",
