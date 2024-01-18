@@ -7,11 +7,11 @@
             "cwd": "${workspaceFolder}", //Path from where commands are executed
             "type": "cortex-debug", //Debug 
             "preLaunchTask": "Flash",
-            "executable": "${workspaceRoot}/build/BlinkLED.elf",
-            "svdFile": "${workspaceRoot}/svd/STMicro/STM32F7x6.svd",
+            "executable": "${workspaceRoot}/build/Blink_LED_F1.elf",
+            "svdFile": "${workspaceRoot}/svd/STMicro/STM32F1x3.svd",
             "request": "launch", //Use "attach" to connect to target w/o elf download
             "servertype": "stlink", //Use stlink setup of cortex-M debug
-            "device": "STM32H746NG", //MCU used
+            "device": "STM32F103CBT", //MCU used
             "interface": "swd", //Interface setup
             "serialNumber": "", //Set ST-Link ID if you use multiple at the same time
             "runToEntryPoint": "main", //Run to main and stop there
@@ -29,8 +29,8 @@
             "name": "Debug-OpenOCD",
             "cwd": "${workspaceRoot}",
             "type": "cortex-debug",
-            "executable": "${workspaceRoot}/build/BlinkLED.elf",
-            "svdFile": "${workspaceRoot}/svd/STMicro/STM32F7x6.svd",
+            "executable": "${workspaceRoot}/build/Blink_LED_F1.elf",
+            "svdFile": "${workspaceRoot}/svd/STMicro/STM32F1x3.svd",
             "request": "launch",
             "servertype": "openocd",
             "gdbPath" : "arm-none-eabi-gdb",
@@ -38,7 +38,7 @@
             "device": "stlink",
             "configFiles": [
                 "interface\\stlink.cfg",
-                "target\\stm32f7x.cfg",
+                "target\\stm32f1x.cfg",
             ],
             "runToEntryPoint": "main",
             // Work around for stopping at main on restart
