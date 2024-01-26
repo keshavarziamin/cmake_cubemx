@@ -1,12 +1,26 @@
 cmake_minimum_required(VERSION 3.20)
 
+
+
+
 project(Blink_LED_F1 VERSION 1.0.0)
+
+
 
 
 set(MCU_FAMILY_LIST  STM32F7xx STM32F4xx STM32F1xx STM32F0xx)
 set(MCU_FAMILY STM32F0xx CACHE STRING "Default MCU Family is Core")
 set_property(CACHE MCU_FAMILY PROPERTY STRINGS ${MCU_FAMILY_LIST})
 
+set(MCU_DEVICE_LIST)
+set(MCU_DEVICE STM32F746xx CACHE STRING "Default MCU Device is STM32F746")
+set_property(CACHE MCU_DEVICE PROPERTY STRINGS ${MCU_DEVICE_LIST})
+
+
+
+set(TOOLCHAIN_PATH)
+set(_TOOLCHAIN_PATH "" CACHE STRING "Default Toolchain Path")
+set_property(CACHE _TOOLCHAIN_PATH PROPERTY STRINGS ${TOOLCHAIN_PATH})
 
 include(arm-none-eabi-binutils)
 

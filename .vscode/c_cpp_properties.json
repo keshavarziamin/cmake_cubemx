@@ -10,7 +10,7 @@
             ],
             "cStandard": "c11",
             "cppStandard": "c++17",
-            "defines": ["USE_HAL_DRIVER","STM32F746xx"]
+            "defines": ["USE_HAL_DRIVER","${config:MCU_DEVICE}"]
         }
     ],
     "version": 4

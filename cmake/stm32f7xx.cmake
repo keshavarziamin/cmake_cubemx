@@ -3,7 +3,7 @@ target_compile_definitions(${EXECUTABLE} PRIVATE
         -DUSE_FULL_ASSERT
         -DUSE_HAL_DRIVER
         -DUSE_FULL_LL_DRIVER
-        -DSTM32F746xx
+        -D${MCU_DEVICE}
         -DHSE_VALUE=8000000
         -D${MCU_FAMILY}
         )

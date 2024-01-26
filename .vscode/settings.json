@@ -2,13 +2,18 @@
     "cmake.buildDirectory": "${workspaceFolder}/build",
     "cmake.configureSettings": {
         "cwd": "${workspaceFolder}",        //Path from where commands are executed
-        "CMAKE_TOOLCHAIN_FILE": "${workspaceFolder}/cmake/arm-none-eabi-gcc.cmake",
+        // STM32F0xx, STM32F1xx, STM32F4xx, STM32F7xx
         "MCU_FAMILY":"STM32F1xx",
+        "MCU_DEVICE":"STM32F103xB",
+        "PROJECT_NAME":"Blink_LED_F1", // the name of directory must be equal project name 
+        // If Use Window 
+        "_TOOLCHAIN_PATH": "C:/SysGCC/arm-eabi",
+        
+        // Do Not Change The Path
+        "CMAKE_TOOLCHAIN_FILE": "${workspaceFolder}/cmake/arm-none-eabi-gcc.cmake",
     },
     "files.associations": {
         "*.cmake": "c",
         "main.h": "c",
-        "stm32f1xx_hal.h": "c",
-        "stm32f1xx_hal_conf.h": "c"
     }
 }
