@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.20)
 
-project(BlinkLED VERSION 1.0.0)
+project(Blink_LED_F1 VERSION 1.0.0)
 
 
 set(MCU_FAMILY_LIST  STM32F7xx STM32F4xx STM32F1xx STM32F0xx)
@@ -33,7 +33,7 @@ target_include_directories(${EXECUTABLE} PRIVATE ${INCLUDE_DIR} ${USER_INCLUDE_D
 ##########################################################
 
 ##########################################################
- include(stm32f7xx)
+ include(${MCU_FAMILY})
 ##########################################################
 
 
